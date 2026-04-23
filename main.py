@@ -5,7 +5,9 @@ from random import randint
 from time import sleep
 from logging import info, basicConfig, INFO
 
-basicConfig(level=INFO, format="\033[97m%(message)s\033[0m")
+WHITE = "\033[97m"
+RESET = "\033[0m"
+basicConfig(level=INFO, format=f"{WHITE}%(message)s{RESET}")
 
 class Request:
     def __init__(self):
