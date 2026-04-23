@@ -7,7 +7,6 @@ def check_palindrome_simple(str):
 
 def check_palindrome_deque(str):
     str_cleaned = re.sub(r'[^A-Za-zА-Яа-я0-9]', '', str).lower()
-    print(str_cleaned)
     str_list = deque(str_cleaned.lower())
     while len(str_list):
         if len(str_list) == 1:
